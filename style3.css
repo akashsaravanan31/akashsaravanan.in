@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#310bd9,#d41d0c);
+
+}
+nav{
+    width:80%;
+    position: sticky;
+    margin: 5px auto;
+    z-index: 1;
+    display: flex;
+    align-items:center ;
+}
+.pic{
+    flex-basis:20%;
+}
+
+
+.pic img{
+    width: 175px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.information{
+    width: 300px;
+     height: 330px;
+     position: absolute;
+     top: -10%;
+     left: 0%;
+     transform: translate(-50%);
+}
+#circle{
+    width: 1000px;
+     height: 1000px;
+     position: absolute;
+     top: 0;
+     left:0;
+     border-radius: 50%; 
+     transition: 1s;
+}
+.feature img{
+    width: 90px;
+    color: azure
+}
+.feature {
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+   margin-left: 30px; 
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 460px;
+    right: 30px;
+}
+.two{
+    top: 110px;
+    left: 240px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 460px;
+    left: 65px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 120px;
+    right: 270px;
+    transform: rotate(-270deg);
+}
+.akash{
+    width: 350px;
+    position: absolute;
+    top: 150%;
+    left: 110%;
+    transform: translateY(-50%);
+    z-index:1 ;
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 17px 0;
+    color: #fff;
+
+}
+
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+}
+
+#downbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #ffffff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+form {
+        position: fixed;
+        top:300px;
+        left: 600px;  
+    }
+form th{
+color: #ffffff;
+padding:5px 10px;
+font: 1em sans-serif;
+}    
+form td {
+    padding:5px 10px;
+}
+form input{
+    padding:10px;
+    border-radius: 5px;
+}
+.font h3{
+    position: fixed;
+    top: 250px;
+    left: 665px;
+    color: #fff;
+    font-family: sans-serif;
+}
+button{
+    position: fixed;
+    top:480px;
+    left:710px ;
+    background-color:chocolate;;
+    border: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 8px;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

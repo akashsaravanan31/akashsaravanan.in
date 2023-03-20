@@ -1,0 +1,103 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Akash Saravanan</title>
+</head>
+<body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function validate(){
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var feedback = document.getElementById('feedback');
+            if(name.value ==""  || feedback.value =="" ||email.value ==""){
+                alert("No blanks values are allowed");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+        
+//              function sendEmail(){
+              
+             
+</script>
+
+
+    <div class="main">
+        <nav>
+            <div class="pic">
+                <img src="msg1453626357-109-removebg-preview.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                
+            </ul>
+            </div>
+        </nav>
+        <div class="font"><h3>FEEDBACK FORM</h3></div>
+        <form onsubmit="validate();" action="" method="">
+            <table>  
+                <tr>
+                    <th>
+                    Name :
+                    </th>
+                    <td>
+                        <input id="name" type="text" name="Name" placeholder="NAME">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Email :
+                    </th>
+                    <td>
+                        <input id="mail" type="email" name="email" placeholder="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Feedback :
+                    </th>
+                    <td>
+                        <input id="feedback"  type="text" name="feedback" placeholder="write your valuable words">
+                    </td>
+                </tr>
+            </table>
+            <button id="btn" type="submit" name="submit" value="submit">Send</button>
+        </form>
+        </div>
+        
+        <script>
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('mail').Value;
+            var feedback = document.getElementById('feedback').Value;
+            var btn = document.getElementById("btn");
+            btn.addEventListener('click',function(e){
+                e.preventDefault()
+;
+                Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "serverakash31@gmail.com",
+    Password : "5E268BAE16D2767B08A03EE428A016133380",
+    To : "musicreactor31@gmail.com",
+    From : "serverakash31@gmail.com",
+    Subject : "This is the subject",
+    Body : "Name : "+document.getElementById('name').value +"<br>"+"email : "+document.getElementById('mail').value+"<br>"+ "feedback : "+document.getElementById('feedback').value
+}).then(
+  message => alert(message)
+ );
+            })
+            reset();
+    
+        </script>
+
+    
+       </body>

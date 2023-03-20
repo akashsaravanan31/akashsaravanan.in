@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Akash Saravanan</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="pic">
+                <img src="msg1453626357-109-removebg-preview.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="project.html">Projects</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="feedback.html">Feedback</a></li>
+            </ul>
+            </div>
+        </nav>
+            <div class="information">
+                <div class="overlay">
+
+                </div>
+                <img src="akash name backround.png" class="akash">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="output-onlinepngtools (1).png">
+                        <div><h2>Qualification</h2>
+                            <p> B.E MECHANICAL ENGINEERING <br>2015-2019</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="skilled.png.png">
+                        <div><h2>Skills</h2>
+                            <p>HTML,CSS,JAVASCRIPT(basics),PHP,MYSQL(basics) </p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="coursed.png.png">
+                        <div><h2>Course completed</h2>
+                            <p>WEB DEVELOPMENT</p>
+                        </div>
+                    </div>
+                    <div class="feature four  ">
+                        <img src="experienced.png.png">
+                        <div><h2>Work Experience</h2>
+                            <p>SALES EXECUTIVE AT KIA MOTORS 2019-2020 <br>
+                              SONA COMSTAR TRAINEE ENGINEER</p>
+                        </div>
+                    </div> 
+                      
+                
+            </div>
+            </div>
+       <div class="controls">
+        <img src="arrow.png" id="upbtn">
+        <h3> SELF INFO</h3>
+        <img src="arrow.png" id="downbtn">
+       </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var up =document.getElementById("upbtn");
+        var down = document.getElementById("downbtn");
+         
+        var rotateValue =circle.style.transform;
+        var rotateSum;
+
+        up.onclick =function(){
+            rotateSum=rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+         }
+         down.onclick =function(){
+            rotateSum=rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+         }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Akash Saravanan</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="pic">
+                <img src="msg1453626357-109-removebg-preview.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="feedback.html">Feedback</a></li>
+            </ul>
+            </div>
+        </nav>
+            <div class="information">
+                <div class="overlay">
+
+                </div>
+                <img src="akash2.png" class="akash">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="facebook-icon-png-774.png">
+                        <div><h2><a href="https://www.facebook.com/saravan.akash?mibextid=ZbWKwL">Facebook</a></h2>
+                            <p>"Dont Just Exit,Live."</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="instagram.png (2).png">
+                        <div><h2><a href="https://instagram.com/ash_coder20?igshid=MGNiNDI5ZTU=">Instagram</a></h2>
+                            <p>"Start Somewhere"</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="mail.png.png">
+                        <div><h2><a href="akashsaravanan2031@gmail.com">Email</a></h2>
+                            <p>"Be Good Do Good"</p>
+                        </div>
+                    </div>
+                    <div class="feature four  ">
+                        <img src="[CITYPNG.COM]HD White Outline Linkedin Round Icon PNG - 1700x1700.png">
+                        <div><h2><a href="https://www.linkedin.com/in/akash-saravanan-85ab03257">Linked In</a></h2>
+                            <p>"Good Things Takes time" </p>
+                        </div>
+                    </div> 
+                      
+                
+            </div>
+            </div>
+       <div class="controls">
+        <img src="arrow.png" id="upbtn">
+        <h3> CONTACT INFO</h3>
+        <img src="arrow.png" id="downbtn">
+       </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var up =document.getElementById("upbtn");
+        var down = document.getElementById("downbtn");
+         
+        var rotateValue =circle.style.transform;
+        var rotateSum;
+
+        up.onclick =function(){
+            rotateSum=rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+         }
+         down.onclick =function(){
+            rotateSum=rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+         }
+         
+    </script>
+</body>
+</html>
